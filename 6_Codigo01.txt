@@ -23,7 +23,7 @@ class ArticlesTable extends Table
 
 
 
-// src/Controller/ArticlesController.php
+// src/Controller/ArticlesController.phjjkki
 
 namespace App\Controller;
 
