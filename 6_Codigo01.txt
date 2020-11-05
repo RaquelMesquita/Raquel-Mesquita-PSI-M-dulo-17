@@ -7,7 +7,7 @@ INSERT INTO articles (title,body,created)
 
 
 
-// src/Model/Table/ArticlesTable.php
+// src/Model/Table/ArticlesTable.php;
 
 namespace App\Model\Table;
 
@@ -23,7 +23,7 @@ class ArticlesTable extends Table
 
 
 
-// src/Controller/ArticlesController.php
+// src/Controller/ArticlesController.php;
 
 namespace App\Controller;
 
