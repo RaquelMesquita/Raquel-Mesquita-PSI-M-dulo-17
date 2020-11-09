@@ -22,7 +22,6 @@ class ArticlesTable extends Table
 
 
 
-// src/Controller/ArticlesController.php
 
 
 class ArticlesController extends AppController
