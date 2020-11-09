@@ -1,3 +1,4 @@
+< patch-1
 INSERT INTO articles (title,body,created)
     VALUES ('The title', 'This is the article body.', NOW());
 INSERT INTO articles (title,body,created)
@@ -37,3 +38,95 @@ class ArticlesController extends AppController
     }
 }
 
+=======
+< patch-1
+INSERT INTO articles (title,body,created)
+    VALUES ('The title', 'This is the article body.', NOW());
+INSERT INTO articles (title,body,created)
+    VALUES ('A title once again', 'And the article body follows.', NOW());
+INSERT INTO articles (title,body,created)
+    VALUES ('Title strikes back', 'This is really exciting! Not.', NOW());
+ggggg
+
+
+// src/Model/Table/ArticlesTable.php
+
+namespace App\Model\Table;
+
+use Cake\ORM\Table;
+
+class ArticlesTable extends Table
+{
+    public function initialize(array $config)
+    {
+        $this->addBehavior('Timestamp');
+    }
+}
+
+
+
+// src/Controller/ArticlesController.php
+
+namespace App\Controller;
+
+class ArticlesController extends AppController
+{
+
+    public function index()
+    {
+        $articles = $this->Articles->find('all');
+        $this->set(compact('articles'));
+    }
+}
+
+
+INSERT INTO articles (title,body,created)
+    VALUES ('The title', 'This is the article body.', NOW());
+INSERT INTO articles (title,body,created)
+    VALUES ('A title once again', 'And the article body follows.', NOW());
+INSERT INTO articles (title,body,created)
+    VALUES ('Title strikes back', 'This is really exciting! Not.', NOW());
+ patch-3
+gggr
+
+
+# o ricardo esteve aqui
+ main
+
+// src/Model/Table/ArticlesTable.php
+
+namespace App\Model\Table;
+
+use Cake\ORM\Table;
+
+class ArticlesTable extends Table
+{
+    public function initialize(array $config)
+    {
+        $this->addBehavior('Timestamp');
+    }
+}
+
+# exercicio 7
+
+// src/Controller/ArticlesController.php
+
+namespace App\Controller;
+
+class ArticlesController extends AppController
+{
+
+    public function index()
+    {
+        $articles = $this->Articles->find('all');
+        $this->set(compact('articles'));
+    }
+}
+//hello
+//alo
+< patch-1
+//OIOI
+=======
+ main
+> main
+> main
