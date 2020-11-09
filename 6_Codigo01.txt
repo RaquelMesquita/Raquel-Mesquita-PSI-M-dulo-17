@@ -83,4 +83,8 @@ class ArticlesController extends AppController
 }
 //hello
 //alo
+< patch-1
+//OIOI
+=======
  main
+> main
